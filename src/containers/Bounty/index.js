@@ -341,6 +341,7 @@ class BountyComponent extends React.Component {
                       </i>
                       <Text
                         link
+                        absolute
                         src={`https://ipfs.infura.io/ipfs/${
                           bounty.sourceDirectoryHash
                         }/${bounty.sourceFileName}`}
@@ -355,7 +356,7 @@ class BountyComponent extends React.Component {
                       <i className={styles.metadataIcon}>
                         <FontAwesomeIcon icon={['far', 'link']} />
                       </i>
-                      <Text link src={`${bounty.webReferenceURL}`}>
+                      <Text link absolute src={`${bounty.webReferenceURL}`}>
                         {shortenUrl(bounty.webReferenceURL)}
                       </Text>
                     </div>
